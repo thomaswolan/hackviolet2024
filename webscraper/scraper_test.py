@@ -1,4 +1,5 @@
 from scraper import Scraper
 
 reader = Scraper()
-reader.readInfo("https://www.nerdwallet.com/best/small-business/unsecured-business-loans")
+reader.readLender("https://www.nerdwallet.com/best/small-business/unsecured-business-loans")
+reader.readLoanInfo("https://www.nerdwallet.com/best/small-business/unsecured-business-loans")
