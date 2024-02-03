@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/LuminaLogo.jpg';
+import logo from '../assets/img/LuminaLogo2.png';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
 

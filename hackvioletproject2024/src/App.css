@@ -233,11 +233,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 250px 0 250px 0;
   background-image: url('./assets/img/LuminaBackground2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 .banner .tagline {
   font-weight: 700;
@@ -250,14 +251,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 100px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
-  margin-top: -175px;
+  margin-top: 100px;
+  margin-left: 300px;
+  margin-right: -300px;
   display: block;
 }
+
+.banner h2 {
+  margin-right: 580px;
+  margin-left: 580px;
+}
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;
@@ -280,23 +289,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
-  margin-left: 25px;
-}
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -309,7 +301,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-bx {
   background: linear-gradient(to right, #1f0363, #076c9f);
-  border-radius: 80px;
+  border-radius: 20px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -40px;

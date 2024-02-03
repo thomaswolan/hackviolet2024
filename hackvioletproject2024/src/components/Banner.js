@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/CompanyLogo.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -11,7 +10,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(100 - Math.random() * 100);
   const period = 2000;
 
-  const toRotate = useMemo(() => ["Microloans", "Funds", "Balls"], []);
+  const toRotate = useMemo(() => ["Microloans", "Funds", "Grants"], []);
 
   const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
@@ -65,11 +64,6 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
-                </div>
-              )}
             </TrackVisibility>
           </Col>
         </Row>
