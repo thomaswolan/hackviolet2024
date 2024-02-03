@@ -31,21 +31,6 @@ export const Projects = () => {
       imgUrl: projImg6,
       githubLink: "https://github.com/thomaswolan/personal-portfolio"
     },
-    {
-      title: "Tower Of Hanoi Solver",
-      description: "Java",
-      imgUrl: projImg4,
-    },
-    {
-      title: "Touchdown Pathfinder: Maximizing Yardage",
-      description: "Java",
-      imgUrl: projImg3,
-    },
-    {      
-      title: "Queue System",
-      description: "Java",
-      imgUrl: projImg5,
-    },
   ];
 
   return (
