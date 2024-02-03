@@ -1,0 +1,87 @@
+body {
+    background-image: url("../assets/img/LuminaBackground2.jpg");
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.loans-container {
+    max-width: 90%;
+  margin: 120px auto; 
+  overflow-x: auto;
+  border-radius: 10px; /* Ensures the container itself has rounded corners */
+  background: linear-gradient(to right, #3e1296, #1a2491); /* Example gradient */
+  padding: 1rem; /* Adds some padding to ensure the gradient is visible around the table */
+  font-size: 18px;
+    
+  }
+  
+  .loans-container h2 {
+    
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse; /* Change to collapse to remove space between borders */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures the border-radius clips content */
+  }
+  
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+    background-color: rgba(140, 119, 236, 0.7); /* Slightly transparent cells */
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly darker and transparent header cells */
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgba(210, 165, 238, 0.5); /* Alternating row color with transparency */
+  }
+  
+  tr:hover td {
+    background-color: rgba(217, 127, 242, 0.85); /* Hover state with less transparency */
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 2px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .loans-container {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: linear-gradient(to right, #1f0363, #076c9f);
+      padding: 1rem;
+    }
+  
+    table {
+        border-radius: 10px;
+      }
+      
+
+    @font-face {
+        font-family: "Centra No2 Bold";
+        src: url("https://db.onlinewebfonts.com/t/1d8aa3902ed39929de0912f0ff2bb89f.eot");
+        src: url("https://db.onlinewebfonts.com/t/1d8aa3902ed39929de0912f0ff2bb89f.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/1d8aa3902ed39929de0912f0ff2bb89f.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/1d8aa3902ed39929de0912f0ff2bb89f.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/1d8aa3902ed39929de0912f0ff2bb89f.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/1d8aa3902ed39929de0912f0ff2bb89f.svg#Centra No2 Bold")format("svg");
+    }
+      
+     
+}

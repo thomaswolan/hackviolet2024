@@ -1,0 +1,50 @@
+{
+    "financial_products": [
+        {
+            "type": "loan",
+            "name": "Small Business Loan",
+            "interest_rate": "6.5%",
+            "term": "10 years",
+            "max_amount": "$500,000",
+            "requirements": [
+                "Business must be operational for at least 2 years",
+                "Minimum annual revenue of $100,000",
+                "Credit score above 660"
+            ]
+        },
+        {
+            "type": "grant",
+            "name": "Innovation Research Grant",
+            "amount": "$250,000",
+            "sector": "Technology",
+            "requirements": [
+                "Must be a tech startup",
+                "Operational for less than 5 years",
+                "Demonstrate innovative product or service"
+            ]
+        },
+        {
+            "type": "loan",
+            "name": "Commercial Real Estate Loan",
+            "interest_rate": "4.8%",
+            "term": "20 years",
+            "max_amount": "$1,000,000",
+            "requirements": [
+                "25% down payment",
+                "Property must be owner-occupied",
+                "Good credit history"
+            ]
+        },
+        {
+            "type": "grant",
+            "name": "Small Business Development Grant",
+            "amount": "$100,000",
+            "sector": "Small Business",
+            "requirements": [
+                "Must employ less than 50 people",
+                "Annual revenue less than $3 million",
+                "Provide business plan with application"
+            ]
+        }
+    ]
+}
