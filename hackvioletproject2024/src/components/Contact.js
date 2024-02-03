@@ -34,7 +34,7 @@ export const Contact = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Membership</h2>
                   <p>
-                  Below are my projects. The first three have links to their individual GitHub pages, providing detailed insights into the codebase and development process. However, please note that the last three projects, while equally noteworthy, are former class assignments, and I'm unable to share their code publicly due to academic integrity policies. Feel free to reach out if you have any questions or would like to discuss these projects further.
+                  Discover the power of tailored financial opportunities with Lumina's specialized membership options! Whether you're a loan applicant seeking funding, a loan investigator exploring viable options, or a bank looking to connect with potential clients on our website, this platform offers a distinct membership path to suit your unique needs and facilitate meaningful financial connections.
                   </p>
                   <Row>
                     {projects.map((project, index) => (
