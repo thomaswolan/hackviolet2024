@@ -1,12 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.jpg";
-import projImg2 from "../assets/img/project-img2.jpg";
-import projImg3 from "../assets/img/project-img3.jpg";
-import projImg4 from "../assets/img/project-img4.jpg";
-import projImg5 from "../assets/img/project-img5.jpg";
-import projImg6 from "../assets/img/project-img6.jpg";
+import projImg1 from "../assets/img/im1.jpg";
+import projImg2 from "../assets/img/im2.jpg";
+import projImg6 from "../assets/img/im3.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -41,9 +38,9 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projects</h2>
+                  <h2>News</h2>
                   <p>
-                  Below are my projects. The first three have links to their individual GitHub pages, providing detailed insights into the codebase and development process. However, please note that the last three projects, while equally noteworthy, are former class assignments, and I'm unable to share their code publicly due to academic integrity policies. Feel free to reach out if you have any questions or would like to discuss these projects further.
+                  BALLS!!!!!
                   </p>
                   <Row>
                     {projects.map((project, index) => (
