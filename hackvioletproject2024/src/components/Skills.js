@@ -13,10 +13,7 @@ export const Skills = () => {
                 <div className="about-me-text">
                   <h2>About Me</h2>
                   <p>
-                    At [Your Company Name], we're committed to unlocking financial access for women entrepreneurs, championing the path towards gender equality in business. Our Microloan and Grant Finder App is at the heart of this mission, offering a transformative platform that simplifies the search for microloans and grants tailored to the unique needs of women-led businesses. We bridge the gap between ambitious women entrepreneurs and the capital they need to flourish, driven by a vision where every woman has the opportunity to achieve her entrepreneurial dreams.
-
-                    Our foundation rests on innovation, inclusivity, and the profound belief in the ripple effect that empowered women can generate within their communities and the economy. By providing personalized funding solutions, we not only support women's business ventures but also contribute to broader economic growth and diversity. [Your Company Name] is not just creating a tool; we're fostering a future where access to business funding is equitable and boundless.
-
+                  At Lumina, we're dedicated to illuminating the path to financial empowerment for women-owned small businesses. Our platform serves as a beacon, offering access to a curated selection of micro-loans and grants designed specifically for the unique challenges and aspirations of women entrepreneurs. By simplifying the search for vital capital, Lumina not only supports the growth and sustainability of women-led ventures but also contributes to the broader economic landscape by fostering diversity, innovation, and resilience within the business community. Our commitment extends beyond mere access to funds; we empower women with the knowledge and tools necessary to navigate the financial terrain confidently. Through personalized recommendations and a focus on reducing the time and resources typically spent on securing funding, Lumina ensures that every woman entrepreneur can find and seize opportunities tailored to her vision. This is more than a platform; it's a movement towards a more inclusive and equitable entrepreneurial ecosystem.
 
                   </p>
                 </div>
