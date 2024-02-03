@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/mountains3.jpg');
+  background-image: url('./assets/img/LuminaBackground2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: black !important;
 }
 .skill-bx {
-  background: #8f6573;
+  background: linear-gradient(to right, #1f0363, #076c9f);
   border-radius: 80px;
   text-align: center;
   padding: 60px 50px;

@@ -1,6 +1,6 @@
 import React from 'react';
-import myImage from "../assets/img/myImage.jpg";
-import colorSharp from "../assets/img/mountains3.jpg";
+import myImage from "../assets/img/CompanyLogo.png";
+import colorSharp from "../assets/img/LuminaBackground2.jpg";
 
 export const Skills = () => {
   return (
@@ -13,7 +13,11 @@ export const Skills = () => {
                 <div className="about-me-text">
                   <h2>About Me</h2>
                   <p>
-                  Hey! I'm Thomas Wolan, a sophomore in computer Science at Virginia Tech. I have a passion for learning new things and expanding my knowledge, as shown by my recent creation of this website. I'm currently on the lookout for internship opportunities to further develop my skills. Beyond programming, I have a love for traveling the world, listening to all kinds of music, and following my favorite sports teams. Feel free to explore my website!
+                    At [Your Company Name], we're committed to unlocking financial access for women entrepreneurs, championing the path towards gender equality in business. Our Microloan and Grant Finder App is at the heart of this mission, offering a transformative platform that simplifies the search for microloans and grants tailored to the unique needs of women-led businesses. We bridge the gap between ambitious women entrepreneurs and the capital they need to flourish, driven by a vision where every woman has the opportunity to achieve her entrepreneurial dreams.
+
+                    Our foundation rests on innovation, inclusivity, and the profound belief in the ripple effect that empowered women can generate within their communities and the economy. By providing personalized funding solutions, we not only support women's business ventures but also contribute to broader economic growth and diversity. [Your Company Name] is not just creating a tool; we're fostering a future where access to business funding is equitable and boundless.
+
+
                   </p>
                 </div>
                 <img src={myImage} alt="" className="right-aligned-image" />

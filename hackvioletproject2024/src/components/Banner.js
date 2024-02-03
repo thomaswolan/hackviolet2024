@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/new-header.png";
+import headerImg from "../assets/img/CompanyLogo.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(100 - Math.random() * 100);
   const period = 2000;
 
-  const toRotate = useMemo(() => ["Web Developer", "Software Engineer", "Virginia Tech"], []);
+  const toRotate = useMemo(() => ["Microloans", "Funds", "Balls"], []);
 
   const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
@@ -54,8 +54,8 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h1>{`Thomas Wolan`}</h1>
-                  <h2 className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Software Engineer", "Virginia Tech" ]'>
+                  <h1>{`Lumina Loans`}</h1>
+                  <h2 className="txt-rotate" data-period="1000" data-rotate='[ "Microloans", "Funds", "Balls" ]'>
                     <span className="wrap">{text}</span>
                   </h2>
                   <p></p>
