@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Loans.css';
 
-
 function Loans() {
   // State to store the loaded financial products
   const [financialProducts, setFinancialProducts] = useState({ financial_products: [] });
@@ -17,7 +16,9 @@ function Loans() {
   // Dynamically generate table rows
   const rows = financialProducts.financial_products.map((product, index) => (
     <tr key={index}>
-      <td>{product.type}</td>
+     <td>
+      <img src={product.imagePath} alt={product.name} style={{width: "150px", height: "auto"}} /> {/* Adjust image display properties as needed */}
+    </td>
       <td>{product.name}</td>
       <td>{product.interest_rate || product.amount}</td>
       <td>{product.term || product.sector}</td>
@@ -36,10 +37,10 @@ function Loans() {
       <table>
         <thead>
           <tr>
-            <th>Type</th>
+            <th>Company</th>
             <th>Name</th>
-            <th>Interest Rate / Amount</th>
-            <th>Term / Sector</th>
+            <th>Interest Rate (APR)</th>
+            <th>Term</th>
             <th>Max Amount</th>
             <th>Requirements</th>
           </tr>
