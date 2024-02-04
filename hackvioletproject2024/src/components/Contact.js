@@ -12,15 +12,15 @@ export const Contact = () => {
   const projects = [
     {
       imgUrl: projImg1,
-      githubLink: "https://github.com/thomaswolan/handify/tree/main"
+      githubLink: ""
     },
     {
       imgUrl: projImg2,
-      githubLink: "https://github.com/thomaswolan/solar-panel/tree/main"
+      githubLink: ""
     },
     {
       imgUrl: projImg6,
-      githubLink: "https://github.com/thomaswolan/personal-portfolio"
+      githubLink: ""
     },
   ];
 

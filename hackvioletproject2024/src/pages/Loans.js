@@ -17,7 +17,9 @@ function Loans() {
   const rows = financialProducts.financial_products.map((product, index) => (
     <tr key={index}>
      <td>
+     <a href={product.link} target="_blank" rel="noopener noreferrer">
       <img src={product.imagePath} alt={product.name} style={{width: "150px", height: "auto"}} /> {/* Adjust image display properties as needed */}
+      </a>
     </td>
       <td>{product.name}</td>
       <td>{product.interest_rate || product.amount}</td>
