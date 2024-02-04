@@ -40,7 +40,7 @@ export const NavBar = () => {
               <Nav.Link as={HashLink} to="/#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link as={HashLink} to="/#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Our Story</Nav.Link>
               <Nav.Link as={HashLink} to="/#projects" className={activeLink === 'news' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('news')}>News</Nav.Link>
-              <Nav.Link as={Link} to="#contact" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Membership</Nav.Link>
+              <Nav.Link as={HashLink} to="#connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Membership</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <HashLink to='/loans'>
