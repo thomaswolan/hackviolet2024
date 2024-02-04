@@ -1,0 +1,35 @@
+{
+    "lender1": {
+        "lender": "Bank"
+    },
+    "lender2": {
+        "lender": "OnDeck"
+    },
+    "lender3": {
+        "lender": "Bluevine"
+    },
+    "lender4": {
+        "lender": "Wells"
+    },
+    "lender5": {
+        "lender": "Fora"
+    },
+    "lender6": {
+        "lender": "Fundbox"
+    },
+    "lender7": {
+        "lender": "Headway"
+    },
+    "lender8": {
+        "lender": "Accion"
+    },
+    "lender9": {
+        "lender": "AltLINE"
+    },
+    "lender10": {
+        "lender": "Lead"
+    },
+    "lender11": {
+        "lender": "Assistant"
+    }
+}
