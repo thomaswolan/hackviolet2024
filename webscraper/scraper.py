@@ -14,27 +14,33 @@ class Scraper:
         for lender in lenders:
             lenderDoc.write(lender.text)
             lenderDoc.write("\n")
+        lenderDoc.close()
         
-        # convert txt into json now
-        jsondict = {}
+        # txt to json
+        tojson = {}
         fields = ["lender"]
-        with open("lenders.txt") as ld:
-            lenderID = 1
-            for line in ld:
-                desc = list(line.strip("\n").split(None, 4))
-                print(desc)
-                key = "lender" + str(lenderID)
+        with open('lenders.txt') as file:
+            l = 1
+            for line in file:
+                lens = list(line.strip().split(None, 1))
+                # key, val = line.strip().split(None, 1)
+                print(lens)
+                # tojson[key] = val.strip()
+                sno = 'lender' + str(l)
                 i = 0
-                newDict = {}
+                dict2 = {}
                 while i < len(fields):
-                    newDict[fields[i]] = desc[i]
+                    dict2[fields[i]] = lens[i]
                     i += 1
-                jsondict[key] = newDict
-                lenderID += 1
-        finaljson = open("lenders.json", "w")
-        json.dump(jsondict, finaljson, indent = 4)
-        finaljson.close()    
+                tojson[sno] = dict2
+                l += 1
 
+        out = open("lenders.json", "w")
+        json.dump(tojson, out, indent = 4, sort_keys = False)
+        out.close()
+
+
+        
     def readLoanInfo(self, website):
         page = requests.get(website)
         soup = BeautifulSoup(page.text, "html.parser")
@@ -43,4 +49,24 @@ class Scraper:
         for loans in loanInfo:
             loanInfoDoc.write(loans.text)
             loanInfoDoc.write("\n")
-    
+        loanInfoDoc.close()
+
+        # txt to json
+        dict1 = {}
+        fields = ["field1", "field2", "field3", "field4", "field5"]
+        with open("loanAmts.txt") as file:
+            l = 1
+            for line in file:
+                desc = list(line.strip().split(None, 5))
+                print(desc)
+                sno = "loaner" + str(l)
+                i = 0
+                dict2 = {}
+                while i < len(fields):
+                    dict2[fields[i]] = desc[i]
+                    i = i + 1
+                dict1[sno] = dict2
+                l += 1
+        out = open("loanAmts.json", "w")
+        json.dump(dict1, out, indent = 4)
+        out.close()
