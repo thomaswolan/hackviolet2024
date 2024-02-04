@@ -27,28 +27,29 @@ export const NavBar = () => {
   };
 
   return (
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link as={HashLink} to="/#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link as={HashLink} to="/#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Our Story</Nav.Link>
-              <Nav.Link as={HashLink} to="/#projects" className={activeLink === 'news' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('news')}>News</Nav.Link>
-              <Nav.Link as={HashLink} to="#connect" className={activeLink === 'connect' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Membership</Nav.Link>
-            </Nav>
-            <span className="navbar-text">
-              <HashLink to='/loans'>
-                <button className="vvd"><span>Find Loans</span></button>
-              </HashLink>
-            </span>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+    <Container>
+      <Navbar.Brand href="/">
+        <img src={logo} alt="Logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <span className="navbar-toggler-icon"></span>
+      </Navbar.Toggle>
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ms-auto">
+          <Nav.Link as={HashLink} to="/#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+          <Nav.Link as={HashLink} to="/#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Our Story</Nav.Link>
+          <Nav.Link as={HashLink} to="/#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>News</Nav.Link>
+          <Nav.Link as={HashLink} to="/#membership" className={activeLink === 'project1' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project1')}>Membership</Nav.Link>
+        </Nav>
+        <span className="navbar-text">
+          <HashLink to='/loans'>
+            <button className="vvd"><span>Find Loans</span></button>
+          </HashLink>
+        </span>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  
   );
 };
